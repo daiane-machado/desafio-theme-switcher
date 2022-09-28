@@ -1,0 +1,49 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--light);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.toggle {
+  align-items: center;
+  background-color: var(--label);
+  border-radius: 3.68rem;
+  display: flex;
+  height: 6.375rem;
+  justify-content: space-between;
+  padding: 0.3rem;
+  width: 14.71rem;
+  position: relative;
+}
+
+.toggle img {
+  height: 5.394rem;
+  width: 5.394rem;
+}
+
+.toggle__btn {
+  background: var(--light);
+  border-radius: 50%;
+  height: 5.394rem;
+  position: absolute;
+  width: 5.394rem;
+  z-index: 1;
+  align-items: flex-end;
+  transition: transform 0.2s linear;
+}
+
+.container__toggle--theme-dark {
+  background-color: var(--dark);
+}
+
+.toggle__btn--position-rigth {
+  right: 0.3rem;
+}
