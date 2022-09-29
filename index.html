@@ -11,10 +11,13 @@
 </head>
 <body>
   <main id="container" class="container">
-    <div class="toggle">
-      <img src="./assets/img/moon.svg" alt="lua">
-      <img src="./assets/img/sun.svg" alt="sol">
-      <button id="btn-toggle" class="toggle__btn"></button>
+    <div class="switch">
+      <input type="checkbox" class="switch__checkbox" id="checkbox">
+      <label for="checkbox" class="switch__label">
+        <img src="./assets/img/moon.svg" class="label__moon" alt="lua">
+        <img src="./assets/img/sun.svg" class="label__sun" alt="sol">
+        <span class="label__ball"></span>
+      </label>
     </div>
   </main>
   <script src="./assets/script/main.js"></script>

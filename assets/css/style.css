@@ -12,38 +12,47 @@
   height: 100vh;
 }
 
-.toggle {
+.switch {
+  position: relative;
+}
+
+.switch__label {
   align-items: center;
   background-color: var(--label);
   border-radius: 3.68rem;
   display: flex;
   height: 6.375rem;
   justify-content: space-between;
-  padding: 0.3rem;
-  width: 14.71rem;
+  padding: 0.5rem;
   position: relative;
+  width: 14.71rem;
 }
 
-.toggle img {
+.switch__checkbox {
+  opacity: 0;
+  position: absolute;
+  top: 2.5rem;
+}
+
+.switch__checkbox:checked + .switch__label .label__ball {
+  transform: translateX(8.31rem);
+}
+
+.label__moon, .label__sun {
   height: 5.394rem;
   width: 5.394rem;
 }
 
-.toggle__btn {
+.label__ball {
   background: var(--light);
   border-radius: 50%;
   height: 5.394rem;
   position: absolute;
   width: 5.394rem;
-  z-index: 1;
-  align-items: flex-end;
   transition: transform 0.2s linear;
+  z-index: 1;
 }
 
-.container__toggle--theme-dark {
+.container__switch--theme-dark {
   background-color: var(--dark);
-}
-
-.toggle__btn--position-rigth {
-  right: 0.3rem;
 }
